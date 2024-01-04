@@ -1,5 +1,5 @@
 import { connectDb } from "@/Helper/db";
-import { Admin } from "@/Models/admin";
+import { Shopkeeper } from "@/Models/shopkeeper";
 import bcrypt from "bcryptjs";
 import { NextResponse } from "next/server";
 
@@ -7,14 +7,19 @@ connectDb();
 
 export async function POST(request) {
     try {
-        const { name, email, mobileNumber, password, confirmPassword } = await request.json();
+        const {
+            shop_name,
+            owner_name,
+            email,
+            password,
+            confirmPassword,
+        } = await request.json();
 
-        // Validate inputs
-        if (!name || !email || !mobileNumber || !password || !confirmPassword) {
+        if (!shop_name || !owner_name || !email || !password || !confirmPassword) {
             return NextResponse.json({
                 message: "All fields are required",
                 status: false,
-            }); 
+            });
         }
 
         if (password !== confirmPassword) {
@@ -27,30 +32,27 @@ export async function POST(request) {
         // Hash the password
         const hashedPassword = bcrypt.hashSync(password, parseInt(process.env.BCRYPT_SALT));
 
-        // Create a new Admin instance
-        const user = new Admin({
-            name,
+        const user = new Shopkeeper({
+            shop_name,
+            owner_name,
             email,
-            mobileNumber,
             password: hashedPassword,
             confirmPassword: hashedPassword, // It's not necessary to store hashed confirmPassword
         });
 
-        // Save the user to the database
-        const createdAdmin = await user.save();
+        const createdShopkeeper = await user.save();
 
-        // Return success response
         const response = NextResponse.json({
-            user: createdAdmin,
+            user: createdShopkeeper,
             status: 201,
-            message: "Login Successfully",
+            message: "Shopkeeper Created",
         });
 
         return response;
     } catch (error) {
         console.error("Error:", error);
         return NextResponse.json({
-            message: "Failed to Login! Try Again",
+            message: "Failed to Login Shopkeeper. Try again.",
             status: false,
         });
     }
