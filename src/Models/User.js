@@ -44,18 +44,8 @@ const UserSchema = new Schema({
         type: String,
         required: true,
     },
-    username: {
-        type: String,
-        unique: true,
-        required: [true, 'Username is required!'],
-    },
-    mobileNumber: {
-        type: String,
-        required: false,
-    },
     email: {
         type: String,
-        unique: true,
         required: [true, 'email is required!'],
     },
     password: {

@@ -6,10 +6,10 @@ import { NextResponse } from "next/server";
 connectDb();
 
 export async function POST(request) {
-    const{name,username,mobileNumber,email,password,confirmPassword} = await request.json();
+    const{name,email,password,confirmPassword} = await request.json();
 
     const user = new User({
-        name,username,mobileNumber,email,password,confirmPassword
+        name,email,password,confirmPassword
     });
 
     try{
