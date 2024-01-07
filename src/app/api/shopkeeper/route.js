@@ -45,7 +45,7 @@ export async function POST(request) {
         const response = NextResponse.json({
             user: createdShopkeeper,
             status: 201,
-            message: "Shopkeeper Created",
+            message: "ShopKeeper Login Successfull",
         });
 
         return response;
