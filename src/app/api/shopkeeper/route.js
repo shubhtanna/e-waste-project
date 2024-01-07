@@ -1,5 +1,5 @@
 import { connectDb } from "@/Helper/db";
-import { Shopkeeper } from "@/Models/shopkeeper";
+import { Shopkeeper } from "@/Models/Login/shopkeeper";
 import bcrypt from "bcryptjs";
 import { NextResponse } from "next/server";
 

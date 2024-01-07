@@ -1,5 +1,5 @@
 import { connectDb } from "@/Helper/db";
-import { Admin } from "@/Models/admin";
+import { Admin } from "@/Models/Login/admin";
 import bcrypt from "bcryptjs";
 import { NextResponse } from "next/server";
 

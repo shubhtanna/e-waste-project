@@ -1,5 +1,5 @@
 import { connectDb } from "@/Helper/db";
-import { Industry } from "@/Models/industry";
+import { Industry } from "@/Models/Login/industry";
 import bcrypt from 'bcryptjs';
 import { NextResponse } from "next/server";
 
