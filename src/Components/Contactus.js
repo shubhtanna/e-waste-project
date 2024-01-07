@@ -40,9 +40,9 @@ const Contactus = () => {
           <div>
             <textarea
               className='form-text text-xl w-[521px] h-[84px] border-solid border-2 border-[#85A697] shadow-[0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset] rounded-2xl mt-6
-               placeholder:text-[#004225] placeholder:text-sm placeholder:font-normal placeholder:pl-[2rem] placeholder:mt-[1.5rem]' 
+               placeholder:text-[#004225] placeholder:text-sm placeholder:font-normal placeholder:pt-[1.7rem] placeholder:pl-[2rem]' 
               name="textArea"
-              placeholder='Enter your query'
+              placeholder='Enter your query' 
               cols="15"
               rows="5"
               required

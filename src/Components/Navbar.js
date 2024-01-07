@@ -12,24 +12,24 @@ const Navbar = () => {
 
             <nav className='nav-items flex'>
                 <ul className='navbar-ul flex gap-16 items-center mr-14'>
-                    <li className='search w-3.5 h-1.5 shrink-0'>
-                        <BiSearch/>
+                    <li className='search  shrink-0'>
+                        <BiSearch className='text-2xl'/>
                     </li>
 
-                    <li className='home w-3.5 h-1.5 shrink-0'>
-                        <BiHomeAlt/>
+                    <li className='home  shrink-0'>
+                        <BiHomeAlt className='text-2xl'/>
                     </li>
 
-                   <li className='about text-green-900 font-inter text-base font-bold'>
+                   <li className='about text-green-900 font-inter text-base font-semibold'>
                         <Link href="#">
-                            <p>About Us</p>
+                            <p className='text-xl'>About Us</p>
                         </Link>
                    </li>
                    
 
-                   <li className='categories text-green-900 font-inter text-base font-bold'>
+                   <li className='categories text-green-900 font-inter text-base font-semibold'>
                         <Link href="#">
-                            <p>Categories</p>
+                            <p className='text-xl'>Categories</p>
                         </Link>
                    </li>
                    </ul>
@@ -39,7 +39,7 @@ const Navbar = () => {
                    <ul className='flex gap-10'>
                    <li>
                     <Link href='#'>
-                        <button className='login-btn px-10 py-5 rounded-2xl border border-solid border-green-900 bg-green-900/10 text-green-900 font-semibold flex justify-center m-1'>
+                        <button className='login-btn px-10 py-5 rounded-2xl border border-solid border-green-900 bg-green-900/10 text-green-900 font-semibold flex justify-center m-1 text-lg'>
                             Log In
                         </button>
                     </Link>
@@ -47,8 +47,8 @@ const Navbar = () => {
 
                    <li>
                     <Link href='#'>
-                        <button  className='signin-btn px-10 py-5 rounded-2xl border border-solid border-green-900 bg-green-900/10 text-green-900 font-semibold flex justify-center m-1 mr-10'>
-                            Sing Up
+                        <button  className='signin-btn px-10 py-5 rounded-2xl border border-solid border-green-900 bg-green-900/10 text-green-900 font-semibold flex justify-center m-1 mr-10 text-lg'>
+                            Sign Up
                         </button>
                     </Link>
                    </li>

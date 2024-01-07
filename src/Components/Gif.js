@@ -12,7 +12,7 @@ const Gif = () => {
       "Turning the Tide on E-Waste: A Sustainable Solution for a Digital World"
       </p>
       <p className='gif-text-slogen text-center text-2xl/[29px] font-normal'>Turn Your Old Gadgets into Green Rewards!</p>
-      <button className='explore-btn w-[195px] h-[54px] bg-[#004225] text-white rounded-md ml-[15rem] mt-[1.5rem]'>
+      <button className='explore-btn w-[195px] h-[54px] bg-[#004225] text-white rounded-md ml-[10rem] mt-[2rem]'>
         <p>Explore more</p>
         <BiRightArrowAlt className='m-auto'/>
       </button>
