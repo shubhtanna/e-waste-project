@@ -5,6 +5,7 @@ import About from '@/Components/About'
 import Services from '@/Components/Services'
 import Gif from '@/Components/Gif'
 import Contactus from '@/Components/Contactus'
+import Slider from '@/Components/Slider'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -41,6 +42,10 @@ export default function RootLayout({ children }) {
 
        <div>
         <Gif/>
+       </div>
+
+       <div>
+        <Slider/>
        </div>
 
        <div>
