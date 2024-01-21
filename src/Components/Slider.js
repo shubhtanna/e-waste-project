@@ -6,7 +6,7 @@ const Slider = () => {
 
     
   return (
-    <div className='h-[650px] w-11/12 bg-[#EBF8F2] mt-20 mx-auto'>
+    <div className='w-11/12 bg-[#EBF8F2] mt-20 mx-auto py-5'>
 
       <div className=' w-[550px] mx-auto pt-12'>
             <p className='text-[#004225] text-3xl font-semibold'>
@@ -19,26 +19,26 @@ const Slider = () => {
       </div>
 
 
-      <div className='ml-20 mt-14'>
-      <div className='flex scroll-smooth overflow-y-auto overscroll-x-contain snap-mandatory no-scrollbar'>
+      <div className='ml-24 mt-14 p-14 border-solid overflow-y-auto overscroll-x-contain no-scrollbar '>
+      <div className=' grid grid-flow-col scroll-auto snap-x gap-10 animate-[scroll_50s_linear_infinite] hover:pause'>
 
-      <div className='mx-5 snap-start'>
+      <div className='mx-5 snap-start transition-transform hover:scale-125'>
         <Image src={SliderImg} className='min-h-[400px] min-w-[300px] rounded-xl border-solid border-2 border-blue-600'/>
       </div>
 
-      <div className='mx-5 snap-start'>
+      <div className='mx-5 snap-start transition-transform hover:scale-125'>
         <Image src={SliderImg} className='min-h-[400px] min-w-[300px] rounded-xl border-solid border-2 border-blue-600'/>
       </div>
 
-      <div className='mx-5 snap-start'>
+      <div className='mx-5 snap-start transition-transform hover:scale-125'>
         <Image src={SliderImg} className='min-h-[400px] min-w-[300px] rounded-xl border-solid border-2 border-blue-600'/>
       </div>
 
-      <div className='mx-5 snap-start'>
+      <div className='mx-5 snap-start transition-transform hover:scale-125'>
         <Image src={SliderImg} className='min-h-[400px] min-w-[300px] rounded-xl border-solid border-2 border-blue-600'/>
       </div>
 
-      <div className='mx-5 snap-start'>
+      <div className='mx-5 snap-start transition-transform hover:scale-125'>
         <Image src={SliderImg} className='min-h-[400px] min-w-[300px] rounded-xl border-solid border-2 border-blue-600'/>
       </div>
 
