@@ -12,4 +12,19 @@
         -ms-overflow-style: none;  /* IE and Edge */
         scrollbar-width: none;  /* Firefox */
   }
+
+  @keyframes scroll {
+    0% {
+        transform : translateX(0);
+    }
+    100%{
+        transform: translateX(calc(-90% * 5));
+    }
+  }
+
+  @layer utilities {
+    .pause {
+      animation-play-state: paused;
+    }
+}
 }
